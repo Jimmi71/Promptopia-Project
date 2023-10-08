@@ -34,7 +34,7 @@ const Feed = () => {
   };
   console.log(searchText);
   const fetchPosts = async () => {
-    const response = await fetch("/api/prompt");
+    const response = await fetch("/app/api/prompt");
     const data = await response.json();
 
     setPosts(data);
